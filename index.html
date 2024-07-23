@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Trabajo para Rendir</h1>
+
+    <div>
+      <input type="text" id="IdTxtApellido" placeholder="Ingrese Apellido">
+      <input type="button" id="IdBtnSearch" value="Search Data">
+      <input type="button" id="IdBtnDelete" value="Delete Data">
+  </div>
+
+  <!-- {
+    "PK": 1,
+    "NU_MATRICULA": 35111,
+    "TX_CLASE": 1920,
+    "Edad23": 103,
+    "Rango23": "12. 84 o mas",
+    "TX_APELLIDO": "MOCCIARO",
+    "TX_NOMBRE": "MARIA LIRIA",
+    "TX_PROFESION": "JUBILADO",
+    "TX_DOMICILIO": "GRAL LUIS DIAZ 20"
+  }, -->
+
+
+  <div>
+    <table class="tabla" border="3px">
+        <thead>
+            <tr>
+                <th>
+                    MATRICULA
+                </th>
+                <th>
+                    CLASE
+                </th>
+                <th>
+                    DOMICILIO
+                </th>
+                <th>
+                    APELLIDO
+                </th>
+                <th>
+                    NOMBRE
+                </th>
+                <th>
+                    VER
+                </th>
+                <th>
+                    SELECCIONAR
+                </th>
+            </tr>
+        </thead>
+
+        <tbody id="IdTableBody">
+            <tr>
+                <td>
+                    11111
+                </td>
+                <td>
+                    2002
+                </td>
+                <td>
+                    PIRQUITAS
+                </td>
+                <td>
+                    VELIZ
+                </td>
+                <td>
+                    NELSON FERNANDO
+                </td>
+                <td>
+                    <input type="button" value="Ver Datos">
+                </td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h1>DATOS DEL CLIENTE</h1>
+    <label>PK</label>
+    <br>
+    <input type="number" id="IdPK" readonly>
+    <br>
+    <label>Matricula</label>
+    <br>
+    <input type="text" value = "" id="IdNU_MATRICULA" readonly>
+    <br>
+    <label>Clase</label>
+    <br>
+    <input type="text" value = "" id="IdTX_CLASE">
+    <br>
+    <label>Apellido</label>
+    <br>
+    <input type="text" value="" id="IdTX_APELLIDO">
+    <br>
+    <label>Nombres</label>
+    <br>
+    <input type="text" value="" id="IdTX_NOMBRE">
+    <br>
+    <input class="boton" type="button" value="Guardar" id="IdBtnGuardar">
+    <input class="boton" type="button" value="Eliminar" id="IdBtnEliminar">
+</div>
+
+  
+  <script src="index.js" type="module"></script>
+</body>
+</html>
